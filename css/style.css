@@ -1,0 +1,366 @@
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  /* the nav-bar was covering a part of the main page picture
+  so this was the solution I implemented to move the contents down */
+  padding-top: 77.2px;
+}
+
+/* media queries */
+@media (max-width: 667px) {
+
+  /* fixes the padding the size of the grid image in mobile version
+  but picture is still a bit stretched */
+  .grid {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+  }
+
+  /* makes entire content background solid instead of transparent so that the
+  words are easier to read on mobile */
+  .dark-color {
+    background-color: #1F1F1F!important;
+    width: 100%!important;
+    padding: 10px!important;
+    margin: 0!important;
+  }
+
+  /* realigns the heading of each energy source's story at the bottom of the home page */
+  .elmt-heading {
+    text-align: left!important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  /* fixes the spacing between images on the home page  */
+  .elmt-box img {
+    margin-bottom: 1em;
+  }
+
+  .elmt-box {
+    margin-bottom: 4em;
+  }
+
+  /* adds a transparent box behind the main uppercase heading on each page so that
+  the words are easier to read on top of the image */
+  .mobile-background {
+    margin: 0!important;
+    background-color: rgba(31,31,31, 0.5);
+    padding-right: 0.5em;
+  }
+
+  /* color of WIND on wind page will get lighter to accomodate the dark transparency
+  background of the main headline */
+  .wind-color {
+    color: #5FABF7!important;
+  }
+
+  .main-heading {
+    font-size: 70px!important;
+    padding-left: 0.5em!important;
+  }
+
+  .second-main {
+    font-size: 20px!important;
+    padding-top: 6%!important;
+  }
+
+  .description {
+    padding-top: 6%!important;
+    padding-bottom: 6%!important;
+  }
+
+  .video-headline {
+    line-height: 1.5em;
+  }
+
+}
+
+  /* will fix the energy source heading alignment at the bottom of the home page
+  when resizing the browser */
+@media screen and (min-width:767px){
+  .elmt-heading{
+    margin-bottom: 1em;
+  }
+}
+
+.row {
+  height: 100%;
+}
+
+.logo {
+  width: 220px;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+  /* the size, spacing, and width of the secondary main-heading/headline  */
+.second-main {
+  font-size: 25px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 95%;
+  line-height: 2em;
+}
+
+.credits {
+  font-size: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.credits-box {
+  background-color: rgba(31,31,31, 0.5);
+}
+
+ /* theme colors of the energy sources */
+.energy-color {
+  color:#EEA738;
+}
+
+.coal-color {
+  color: #BA592F;
+}
+
+.wind-color {
+  color: #294A6B;
+}
+
+.electric-color {
+  color: #D6CF00;
+}
+
+.credits-color {
+  color: #6C9D31;
+}
+
+.white-color {
+  color: #FFFFFF;
+}
+
+  /* create the bold 'B' on the home page */
+.bold-letter {
+  color: #EEA738;
+  font-size: 50px;
+}
+
+  /* the transparency and alignment of the content boxes on each page */
+.dark-color {
+  background-color: rgba(31,31,31, 0.8);
+  color: #FFFFFF;
+  padding: 50px;
+  width: 95%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+  /* the font-size of the content will be smaller */
+.description {
+  font-size: 20px;
+  line-height: 2em;
+}
+
+/* navbar properties */
+.navbar-default {
+  background-color: #000000;
+}
+
+.nav-link a {
+  color: white;
+  font-size: 18px;
+  transition: 0.5s ease;
+}
+
+.nav-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/* navbar hover effect: changing the colors of each link as you hover */
+#home:hover {
+  color: #EEA738;
+  transition: 0.5s ease;
+}
+
+#coal:hover {
+  color: #BA592F;
+  transition: 0.5s ease;
+}
+
+#wind:hover {
+  color: #294A6B;
+  transition: 0.5s ease;
+}
+
+#electric:hover {
+  color: #D6CF00;
+  transition: 0.5s ease;
+}
+
+#credits:hover {
+  color: #6C9D31;
+  transition: 0.5s ease;
+}
+
+/* main page heading */
+.main-heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: 5em;
+  width: 6em;
+  /* background: rgba(0,0,0,0.5); */
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  color: white;
+}
+
+.credits-heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: 5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  color: white;
+}
+
+/* parallax effect */
+.parallax {
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-background {
+  background-image: url('../images/light-bulb.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.coal-background {
+  background-image: url('../images/coal_burning.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wind-background {
+  background-image: url('../images/wind_turbine.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.electric-background {
+  background-image: url('../images/white_electric.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.credits-background {
+  background-image: url('../images/wind_coal.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+  /* div container to center the image */
+.img-container {
+  text-align: center;
+}
+
+.grid {
+  width: auto;
+  height: 600px;
+  padding: 20px;
+}
+
+  /* vimeo video properties */
+.video {
+  text-align: center;
+}
+
+.video-headline h2 {
+  font-size: 30px!important;
+}
+
+.video-headline a:hover {
+  color: #FFFFFF;
+}
+
+  /* bootstrap accordion boxes properties */
+.panel-group {
+  margin-top: 3%;
+}
+
+.panel-heading {
+  background-color: #eee;
+  width: 100%;
+  padding: 10px;
+  border: 4px solid #1F1F1F;
+}
+
+.panel-title a {
+    color: #444!important;
+}
+
+.panel-title a:hover {
+  text-decoration: none;
+}
+
+  /* gives spacing between the end of the page and the end of the last content row */
+.last-content {
+    padding-bottom: 5em;
+    margin-bottom: 5%;
+}
+
+/* element boxes on the home page */
+.element {
+  text-align: center;
+  padding-bottom: 5em;
+  margin-bottom: 5%;
+}
+
+  /* grayscale effect */
+.elmt-box img {
+  width: 70%;
+  height: 70%;
+  background-position: center;
+  background-size: cover;
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  transition: all 0.8s ease;
+}
+
+  /* hover over image will give it full color again, getting rid of grayscale */
+.elmt-box img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+.elmt-heading {
+  text-align: center;
+}
+
+.elmt-descr {
+  font-size: 20px;
+}
+
+.descr-box {
+  padding-left: 30px;
+}
+
+/* code credits: https://getbootstrap.com/docs/4.0/getting-started/introduction/ */
